@@ -158,8 +158,8 @@ for(i, (gx, gy, gw, gh)) in enumerate(locs):
     cv2.putText(image, "".join(groupOutput), (gx, gy-15), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0,0,255), 2)
     output.append(groupOutput)
 # 打印出结果
-print("Credit Card Type:{}".format(FIRST_NUMBER[output[0]]))
-print("Credit Card #: {}".format("".join(output)))
+# print("Credit Card Type:{}".format(FIRST_NUMBER[output[0]]))
+# print("Credit Card #: {}".format("".join(output)))
 cv2.imshow("image", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
